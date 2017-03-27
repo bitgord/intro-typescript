@@ -3,7 +3,7 @@ export class QuoteService {
 
   private quotes: Quote[] = sampleQuotes;
 
-  getRandomQuote(): Quote {
+  private getRandomQuote(): Quote {
     const randomIndex = Math.floor(Math.random() * this.quotes.length);
     return this.quotes[randomIndex];
   }
